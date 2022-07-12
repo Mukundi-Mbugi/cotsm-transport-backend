@@ -7,6 +7,8 @@ gem "sinatra", "~> 2.1"
 # A fast and simple web server
 # https://github.com/macournoyer/thin
 gem "thin", "~> 1.8"
+gem "pg"
+gem "puma"
 
 # Rack middleware. Used specifically for parsing the request body into params.
 # https://github.com/rack/rack-contrib
@@ -29,7 +31,7 @@ gem "sinatra-activerecord", "~> 2.0"
 gem "rake", "~> 13.0"
 
 # Provides functionality to interact with a SQLite3 database
-gem "sqlite3", "~> 1.4"
+
 
 # Require all files in a folder
 gem "require_all", "~> 3.0"
@@ -40,6 +42,7 @@ gem "faker", "~> 2.2"
 # These gems will only be used when we are running the application locally
 group :development do
   gem "pry", "~> 0.14.1"
+  gem "sqlite3", "~> 1.4"
 
   # Automatically reload when there are changes
   # https://github.com/alexch/rerun
