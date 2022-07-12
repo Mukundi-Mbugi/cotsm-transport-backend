@@ -1,6 +1,6 @@
-#   Ensure the postgresql gem is defined in your Gemfile
+#   Ensure the posgresql gem is defined in your Gemfile
 #   gem 'pg'
-#
+
 default: &default
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -8,7 +8,7 @@ default: &default
 
 development:
   <<: *default
-  database: "sqlite3"
+  url: "postgresql://postgres:postgres@localhost:5432/database_name"
 
 test:
   <<: *default
