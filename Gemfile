@@ -14,7 +14,7 @@ end
 
 
 gem 'rack-cors'
-gem 'rack-parser'
+gem 'rack-bodyparser'
 
 # Configures common Rake tasks for working with Active Record
 # https://github.com/sinatra-activerecord/sinatra-activerecord
