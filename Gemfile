@@ -8,13 +8,13 @@ ruby "2.7.4"
 # An object-relational mapper
 # https://guides.rubyonrails.org/active_record_basics.html
 group :production do
-  gem "sinatra-activerecord"
   gem "pg"
   gem "puma"
 end
-gem "activerecord", "~> 6.1"
+
 
 gem 'rack-cors'
+gem 'rack-parser'
 
 # Configures common Rake tasks for working with Active Record
 # https://github.com/sinatra-activerecord/sinatra-activerecord
