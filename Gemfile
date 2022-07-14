@@ -14,7 +14,7 @@ group :production do
 end
 gem "activerecord", "~> 6.1"
 
-
+gem 'rack-cors'
 
 # Configures common Rake tasks for working with Active Record
 # https://github.com/sinatra-activerecord/sinatra-activerecord
