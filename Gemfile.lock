@@ -98,5 +98,8 @@ DEPENDENCIES
   rspec
   sinatra-activerecord
 
+RUBY VERSION
+   ruby 2.7.4p191
+
 BUNDLED WITH
    2.3.15
