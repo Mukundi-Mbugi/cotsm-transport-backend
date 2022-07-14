@@ -10,5 +10,10 @@ class ApplicationController < Sinatra::Base
     member = Member.create(name: params[:name], estate: params[:estate] , nearest_stage: params[:nearest_stage], latitude: params[:latitude], longitude: params[:longitude])
     member.to_json
   end
+  delete '/members/:id' do
+    member = Member.find(params[:id])
+    member.destroy
+    member.to_json
+  end
   
 end
