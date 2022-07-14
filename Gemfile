@@ -3,6 +3,7 @@ source "https://rubygems.org"
 # A DSL for quickly creating web applications
 # https://github.com/sinatra/sinatra
 gem "sinatra", "~> 2.1"
+gem "thin", "~> 1.8"
 
 # An object-relational mapper
 # https://guides.rubyonrails.org/active_record_basics.html
