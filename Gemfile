@@ -31,6 +31,7 @@ gem "rake"
 # Require all files in a folder
 # https://github.com/jarmo/require_all
 gem "require_all"
+gem "rack-test", "~> 1.1"
 
 # These gems will only be used when we are running the application locally
 group :development do
@@ -49,5 +50,5 @@ end
 group :test do
   gem "database_cleaner"
   gem "rspec"
-  gem "rack-test", "~> 1.1"
+  
 end
